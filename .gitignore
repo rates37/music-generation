@@ -1,3 +1,13 @@
+
+# ignore training data
+data/*
+
+# ignore model checkpoints:
+model_checkpoints/*
+
+
+# Default Python .gitignore:
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
