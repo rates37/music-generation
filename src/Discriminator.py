@@ -118,3 +118,13 @@ class Discriminator(nn.Module):
         
         # return sigmoid of preds, preds, and featureMatches:
         return F.sigmoid(x), x, matchedFeatures
+
+
+if __name__ == "__main__":
+    d = Discriminator()
+    x = torch.ones([3, 1, 16 ,128])
+    y = torch.ones([3, 13])
+    probs, preds, fm = d(x, y)
+    print(probs.shape)
+    print(preds.shape)
+    print(fm.shape)

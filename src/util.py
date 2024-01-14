@@ -29,7 +29,7 @@ def concat_features(x: torch.Tensor, y: torch.Tensor) -> torch.Tensor:
     
     # reshape y to [batchSize, n, a, b] 
     expandedY = y.expand(x.shape[0], y.shape[1], x.shape[2], x.shape[3])
-    print(expandedY.shape)
+    
     # concat expaded y with x along the feature map axis (axis 1)
     return torch.cat((x, expandedY), 1)
 
