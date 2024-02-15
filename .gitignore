@@ -5,6 +5,9 @@ data/*
 # ignore model checkpoints:
 model_checkpoints/*
 
+# ignore scraped data:
+src/archive*
+
 
 # Default Python .gitignore:
 
