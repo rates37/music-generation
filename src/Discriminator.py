@@ -13,6 +13,8 @@ class Discriminator(nn.Module):
     """
     
     def __init__(self) -> None:
+        """Discriminator Constructor
+        """
         # call parent class' constructor:
         super(Discriminator, self).__init__()
         
